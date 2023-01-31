@@ -14,3 +14,4 @@ scipy==1.1.0
 six==1.16.0
 threadpoolctl==2.0.0
 Werkzeug==2.2.2
+waitress==2.1.2
