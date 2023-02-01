@@ -22,7 +22,7 @@ def submit():
 			res = "Fraud"
 
 		
-	return render_template("sub.html",res=res)
+	return render_template("index.html",res=res)
 
 if __name__=="__main__":
 	app.run(debug=True)
