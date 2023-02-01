@@ -1,17 +1,43 @@
-<html>
-<body>
-
-<p> Enter the details to check if transaction is Fraud or Not
-<form action="/sub" method="POST">
-  <label for="v1"> Variable 1:</label><br>
-  <input type="text" id="v1" name="v1" value="0"><br>
-  <label for="v2">Variable 2:</label><br>
-  <input type="text" id="v2" name="v2" value="0"><br><br>
-  <label for="v3">Variable 3:</label><br>
-  <input type="text" id="v3" name="v3" value="0"><br><br>
-
-  <input type="submit" value="Submit">
-</form>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+  
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    
+	<form action="/sub" method="POST" class="card p-3 bg-light">
+		<div class="mb-3">
+		  	<h4>Enter transaction details</h4>
+		</div>
+		
+		<div class="mb-3">
+		  	<label for="v1" class="form-label">Variable 1:</label>
+		  	<input type="text" class="form-control" id="v1" name="v1" value="0">
+		</div>
+		<div class="mb-3">
+		  	<label for="v2" class="form-label">Variable 2:</label>
+		  	<input type="text" class="form-control" id="v2" name="v2" value="0">
+		</div>
+		<div class="mb-3">
+		  	<label for="v3" class="form-label">Variable 3:</label>
+		  	<input type="text" class="form-control" id="v3" name="v3" value="0">
+		</div>
+		
+		 <button type="submit" class="btn btn-primary">Submit</button>
+		 <div class="mb-3">
+		 	<label for="v3" class="form-label">Result:</label>
+		  		<h5>{{ res }}</h5>
+		</div>
+	</form>
+	
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
